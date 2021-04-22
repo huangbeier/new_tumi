@@ -76,8 +76,26 @@ class Homepage_mod():
         obj = Homepage_obj(driver)
         obj.click_f_backpacks()
         driver.switch_to_window(driver.window_handles[-1])
+    
+    def TUMIUAT_1510_3(self,driver):
+        obj = Homepage_obj(driver)
+        obj.click_f_totes()
+        driver.switch_to_window(driver.window_handles[-1])
 
+    def TUMIUAT_1510_4(self,driver):
+        obj = Homepage_obj(driver)
+        obj.click_f_crossbodies()
+        driver.switch_to_window(driver.window_handles[-1])
+    
+    def TUMIUAT_1510_5(self,driver):
+        obj = Homepage_obj(driver)
+        obj.click_f_accessories()
+        driver.switch_to_window(driver.window_handles[-1])
 
+    def TUMIUAT_1510_6(self,driver):
+        obj = Homepage_obj(driver)
+        obj.click_f_recycled()
+        driver.switch_to_window(driver.window_handles[-1])
         
 
 

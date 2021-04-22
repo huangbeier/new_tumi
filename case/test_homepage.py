@@ -80,8 +80,24 @@ class HOMEPAGE(unittest.TestCase):
 
     def test_010_TUMIUAT_1510_1(self):
         self.mod.TUMIUAT_1510_1(self.driver)
-        assert new_find_element(self.driver,self.conf.get('homepage','luggage_title').split(',')).text =='各类旅行箱 - 托运旅行箱、登机箱'
+        assert new_find_element(self.driver,self.conf.get('homepage','pro_title').split(',')).text =='各类旅行箱 - 托运旅行箱、登机箱'
 
     def test_011_TUMIUAT_1510_2(self):
         self.mod.TUMIUAT_1510_2(self.driver)
-        assert new_find_element(self.driver,self.conf.get('homepage','backpacks_title').split(',')).text =='各类背包 - 商务、旅行、休闲背包'
+        assert new_find_element(self.driver,self.conf.get('homepage','pro_title').split(',')).text =='各类背包 - 商务、旅行、休闲背包'
+
+    def test_012_TUMIUAT_1510_3(self):
+        self.mod.TUMIUAT_1510_3(self.driver)
+        assert new_find_element(self.driver,self.conf.get('homepage','pro_title').split(',')).text =='斜挎包 - 休闲斜挎包'
+
+    def test_013_TUMIUAT_1510_4(self):
+        self.mod.TUMIUAT_1510_4(self.driver)
+        assert new_find_element(self.driver,self.conf.get('homepage','pro_title').split(',')).text =='托特包 - 手拎包、手袋'
+
+    def test_014_TUMIUAT_1510_5(self):
+        self.mod.TUMIUAT_1510_5(self.driver)
+        assert new_find_element(self.driver,self.conf.get('homepage','pro_title').split(',')).text =='各类旅行配件、电子产品、钱包等'
+
+    def test_015_TUMIUAT_1510_6(self):
+        self.mod.TUMIUAT_1510_6(self.driver)
+        assert new_find_element(self.driver,self.conf.get('homepage','pro_title').split(',')).text =='由可回收材料制成的环保系列'

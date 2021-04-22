@@ -67,6 +67,18 @@ class Homepage_obj:
     def click_f_backpacks(self):
         new_find_element(self.driver, self.conf.get('homepage', 'f_backpacks').split(',')).click()
 
+    def click_f_totes(self):
+        new_find_element(self.driver, self.conf.get('homepage', 'f_totes').split(',')).click()
+
+    def click_f_crossbodies(self):
+        new_find_element(self.driver, self.conf.get('homepage', 'f_crossbodies').split(',')).click()
+
+    def click_f_accessories(self):
+        new_find_element(self.driver, self.conf.get('homepage', 'f_accessories').split(',')).click()
+
+    def click_f_recycled(self):
+        new_find_element(self.driver, self.conf.get('homepage', 'f_recycled').split(',')).click()
+
 if __name__ == '__main__':
     #driver=webdriver.Chrome(r'C:\huang111\new_tumi\chromedriver.exe')
     #driver.get(r'https://www.tumi.cn/')
