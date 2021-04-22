@@ -3,13 +3,13 @@
 # #coding:utf-8
 import configparser
 from utils.seleniumtools import new_find_element
-from selenium import webdriver
+from utils.get_conf_path import elementLocationPath
 import time
 class Homepage_pro:
     def __init__(self,driver):
         self.driver = driver
         self.conf=configparser.ConfigParser()
-        self.conf.read(r'C:\huang111\new_tumi\utils\config.ini',encoding='utf-8')
+        self.conf.read(elementLocationPath,encoding='utf-8')
 
 
     def click_login_register_btn(self):
