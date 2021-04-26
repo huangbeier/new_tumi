@@ -6,8 +6,9 @@ from selenium import webdriver
 import time
 import unittest
 import configparser
-from utils.get_conf_path import elementLocationPath
+from utils.get_conf_path import elementLocationPath, test_url
 from utils.seleniumtools import new_find_element
+from utils.get_conf_path import Chromepath
 # def login():
 #     driver = webdriver.Chrome(r'C:\huang111\new_tumi\chromedriver.exe')
 #     driver.get('https://www.tumi.cn/')
@@ -23,7 +24,7 @@ class HOMEPAGE(unittest.TestCase):
     def setUpClass(cls):
         cls.conf=configparser.ConfigParser()
         cls.conf.read(elementLocationPath,encoding='utf-8')
-        cls.driver=webdriver.Chrome(cls.conf.get('chrome','path'))
+        cls.driver=webdriver.Chrome(Chromepath)
 
     @classmethod
     def tearDownClass(cls):
@@ -31,7 +32,7 @@ class HOMEPAGE(unittest.TestCase):
 
     def setUp(self):
         self.mod = Homepage_mod(self.driver)
-        self.driver.get(self.conf.get('tumi_cn','path'))
+        self.driver.get(test_url)
         self.driver.maximize_window()
         self.driver.refresh()
         time.sleep(2)

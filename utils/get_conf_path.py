@@ -10,7 +10,7 @@ elementLocationPath = os.path.join(parentDirPath, u'config\config.ini')
 
 Chromepath=os.path.join(parentDirPath, u'chromedriver.exe')
 
-test_url=r'https://mail.163.com'
+test_url=r'https://www.tumi.cn/'
 #NBBKZIBDBVDTURJG    TG笔记本
 auth_code = 'LXHRNCHDCWUYAQGG'#邮箱授权码
 excelpath=os.path.join(parentDirPath, u'data\\t_01.xlsx')
